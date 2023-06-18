@@ -1,0 +1,47 @@
+{
+  "name": "openapi-types-generator",
+  "version": "1.0.0",
+  "description": "TypeScript CLI library generating TypeScript interfaces in compliance with a given OpenAPI specification. For 3.1.x and 3.0.x OpenAPI versions.",
+  "keywords": [
+    "openapi 3.x",
+    "typescript",
+    "interfaces generator",
+    "types generator",
+    "request interfaces",
+    "responses interfaces"
+  ],
+  "license": "MIT",
+  "author": "ekoulemaneng <ekoulemaneng@gmail.com>",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "files": [
+    "README.md",
+    "package.json",
+    "LICENSE",
+    "dist"
+  ],
+  "bin": "./dist/index.js",
+  "scripts": {
+    "build": "del dist && tsc"
+  },
+  "dependencies": {
+    "@stoplight/json-ref-resolver": "^3.1.5",
+    "commander": "^10.0.1",
+    "json-schema-to-typescript": "^13.0.1",
+    "yaml": "^2.3.1"
+  },
+  "devDependencies": {
+    "del-cli": "^5.0.0",
+    "openapi-objects-types": "^1.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ekoulemaneng/openapi-types-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ekoulemaneng/openapi-types-generator/issues"
+  },
+  "homepage": "https://github.com/ekoulemaneng/openapi-types-generator#readme"
+}
